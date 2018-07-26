@@ -1,0 +1,6 @@
+- name: Yum Update
+  hosts: all
+  tasks:
+    - name: Yum Update
+      yum:
+        name=* state=latest
