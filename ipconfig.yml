@@ -4,11 +4,11 @@
   vars:
     ansible_user: SVC_Remote
     ansible_password: Bell@0916!
-    ansible_port: 5986
+    ansible_port: 443
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
     ansible_become: false
-    ansible_winrm_scheme: http
+    ansible_winrm_scheme: https
   tasks:
     - name: run ipconfig
       raw: ipconfig
