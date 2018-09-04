@@ -2,9 +2,9 @@
   hosts: all
   gather_facts: False
   vars:
-    ansible_user: SVC_Remote
+    ansible_user: SVC_Remote@uncc.edu
     ansible_password: Bell@0916!
-    ansible_port: 443
+    ansible_port: 5986
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
     ansible_become: false
