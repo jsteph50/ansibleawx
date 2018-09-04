@@ -1,8 +1,7 @@
-- name: This is a simple test playbook
-  hosts: all
-  gather_facts: False
+---
+- hosts: web
   tasks:
-    - name: run ipconfig
-      raw: ipconfig
-      register: ipconfig
-    - debug: var=ipconfig
+  - name: Ensure IIS webserver is installed
+    win_feature:
+    name: Web-Server
+    state: present
