@@ -2,7 +2,7 @@
   hosts: all
   gather_facts: False
   vars:
-    ansible_user: SVC_Remote@uncc.edu
+    ansible_user: UNCCHARLOTTE-NT\SVC_Remote
     ansible_password: Bell@0916!
     ansible_port: 5986
     ansible_connection: winrm
