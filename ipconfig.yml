@@ -8,7 +8,6 @@
     ansible_connection: winrm
     ansible_winrm_server_cert_validation: ignore
     ansible_become: false
-    ansible_winrm_transport = ssl
   tasks:
     - name: run ipconfig
       raw: ipconfig
