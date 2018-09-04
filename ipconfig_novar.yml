@@ -1,7 +1,6 @@
----
-- hosts: web
+- hosts: all
   tasks:
-  - name: Ensure IIS webserver is installed
-    win_feature:
+  - name: IIS Installed
+    wind_feature:
     name: Web-Server
-    state: present
+    state:present
