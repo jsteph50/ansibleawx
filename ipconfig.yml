@@ -9,7 +9,6 @@
     ansible_winrm_server_cert_validation: ignore
     ansible_become: false
     ansible_winrm_transport: Kerberos
-    ansible_winrm_kinit_mode: manual
   tasks:
     - name: run ipconfig
       raw: ipconfig
